@@ -1,0 +1,160 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+}
+
+.taxpal-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Background gradient from Figma */
+  background: linear-gradient(180deg, #D4E9FF 0%, #FFFFFF 100%);
+}
+
+.taxpal-card {
+  width: 330px;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #999;
+  padding: 40px 25px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* The soft blue header fade inside the card */
+.taxpal-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  background: linear-gradient(180deg, #B9D9FF 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 0;
+}
+
+.taxpal-content {
+  position: relative;
+  z-index: 1;
+}
+
+.taxpal-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+}
+
+.taxpal-subtitle {
+  font-size: 11px;
+  color: #333;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding-left: 2px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.forgot-link {
+  text-align: right;
+  font-size: 10px;
+  color: #FF5C5C;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.taxpal-btn {
+  width: 100%;
+  background: #D4E9FF;
+  border: 1px solid #A5C9ED;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s;
+}
+
+.taxpal-btn:hover {
+  background: #c3dcf7;
+}
+
+.taxpal-footer {
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+.taxpal-footer span {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* OTP Styling */
+.otp-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.otp-input {
+  width: 45px;
+  height: 38px;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.help-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.resend-link {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 15px;
+  cursor: pointer;
+}
