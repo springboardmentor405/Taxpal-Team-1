@@ -1,0 +1,44 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import AuthLayout from './layouts/AuthLayout';
+import DashboardLayout from './layouts/DashboardLayout';
+
+// Pages - Auth & Modals
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Verification from './pages/Verification';
+import ForgotPassword from './pages/ForgotPassword';
+import RecordIncome from './pages/RecordIncome';
+import RecordExpense from './pages/RecordExpense';
+
+// Pages - Dashboard
+import Dashboard from './pages/Dashboard';
+import Settings from './pages/Settings';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        
+        {/* Auth & Form Routes */}
+        <Route element={<AuthLayout />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/verify" element={<Verification />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/record-income" element={<RecordIncome />} />
+          <Route path="/record-expense" element={<RecordExpense />} />
+        </Route>
+
+        {/* Dashboard Routes */}
+        <Route element={<DashboardLayout />}>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/settings" element={<Settings />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
