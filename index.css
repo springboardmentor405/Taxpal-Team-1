@@ -1,44 +1,19 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import AuthLayout from './layouts/AuthLayout';
-import DashboardLayout from './layouts/DashboardLayout';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-// Pages - Auth & Modals
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Verification from './pages/Verification';
-import ForgotPassword from './pages/ForgotPassword';
-import RecordIncome from './pages/RecordIncome';
-import RecordExpense from './pages/RecordExpense';
-
-// Pages - Dashboard
-import Dashboard from './pages/Dashboard';
-import Settings from './pages/Settings';
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navigate to="/login" replace />} />
-        
-        {/* Auth & Form Routes */}
-        <Route element={<AuthLayout />}>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/verify" element={<Verification />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/record-income" element={<RecordIncome />} />
-          <Route path="/record-expense" element={<RecordExpense />} />
-        </Route>
-
-        {/* Dashboard Routes */}
-        <Route element={<DashboardLayout />}>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/settings" element={<Settings />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #CCE5FF 0%, #FFFFFF 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-export default App;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
