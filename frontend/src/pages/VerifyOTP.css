@@ -1,0 +1,107 @@
+/* ===== TITLE ===== */
+
+.verify-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.verify-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ===== OTP CONTAINER ===== */
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0;
+  flex-wrap: nowrap; /* ✅ all 6 boxes stay on one line */
+}
+
+/* ===== OTP BOX ===== */
+
+.otp-input {
+  width: 48px; /* ✅ reduced from 55px so all 6 fit in one row */
+  height: 52px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 16px;
+  border: 1px solid #e6e6e6;
+  background: #f9fcff;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+/* Focus effect */
+
+.otp-input:focus {
+  border-color: #4da6ff;
+  box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* ===== VERIFY BUTTON ===== */
+
+.taxpal-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  background: linear-gradient(to right, #a8d8ff, #d1e9ff);
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.taxpal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== TIMER TEXT ===== */
+
+.timer-text {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+
+/* ===== RESEND LINK ===== */
+
+.resend-link {
+  display: block;
+  margin-top: 18px;
+  text-align: center;
+  color: #4da6ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resend-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 480px) {
+  .otp-container {
+    gap: 7px;
+  }
+
+  .otp-input {
+    width: 40px;
+    height: 44px;
+    font-size: 16px;
+  }
+}

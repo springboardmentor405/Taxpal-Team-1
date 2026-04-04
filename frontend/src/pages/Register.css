@@ -1,0 +1,87 @@
+/* ===== PAGE BACKGROUND (Handled by Card component) ===== */
+
+/* ===== TITLE ===== */
+
+.taxpal-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.taxpal-subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ===== FORM GROUP ===== */
+
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid #E6E6E6;
+  background: #F9FCFF;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+/* Focus Effect */
+.form-group input:focus {
+  border-color: #4DA6FF;
+  box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.2);
+}
+
+/* ===== BUTTON ===== */
+
+.taxpal-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  background: linear-gradient(to right, #A8D8FF, #D1E9FF);
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.taxpal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== FOOTER ===== */
+
+.taxpal-footer {
+  margin-top: 22px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.taxpal-footer span {
+  color: #4DA6FF;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.taxpal-footer span:hover {
+  text-decoration: underline;
+}
