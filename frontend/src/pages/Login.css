@@ -123,3 +123,8 @@
 .login-footer span:hover {
   text-decoration: underline;
 }
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

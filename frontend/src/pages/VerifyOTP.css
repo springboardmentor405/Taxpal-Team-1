@@ -20,22 +20,22 @@
 .otp-container {
   display: flex;
   justify-content: center;
-  gap: 12px; /* reduced gap so 6 boxes fit perfectly */
+  gap: 10px;
   margin: 25px 0;
-  flex-wrap: wrap; /* prevents overflow on small screens */
+  flex-wrap: nowrap; /* ✅ all 6 boxes stay on one line */
 }
 
 /* ===== OTP BOX ===== */
 
 .otp-input {
-  width: 55px;  /* slightly reduced for 6 boxes */
-  height: 55px;
+  width: 48px; /* ✅ reduced from 55px so all 6 fit in one row */
+  height: 52px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
   border-radius: 16px;
-  border: 1px solid #E6E6E6;
-  background: #F9FCFF;
+  border: 1px solid #e6e6e6;
+  background: #f9fcff;
   outline: none;
   transition: 0.2s ease;
 }
@@ -43,7 +43,7 @@
 /* Focus effect */
 
 .otp-input:focus {
-  border-color: #4DA6FF;
+  border-color: #4da6ff;
   box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.2);
   transform: scale(1.05);
 }
@@ -57,7 +57,7 @@
   border: none;
   font-weight: bold;
   font-size: 15px;
-  background: linear-gradient(to right, #A8D8FF, #D1E9FF);
+  background: linear-gradient(to right, #a8d8ff, #d1e9ff);
   cursor: pointer;
   transition: 0.3s ease;
   margin-top: 10px;
@@ -83,7 +83,7 @@
   display: block;
   margin-top: 18px;
   text-align: center;
-  color: #4DA6FF;
+  color: #4da6ff;
   font-weight: bold;
   cursor: pointer;
 }
@@ -96,12 +96,12 @@
 
 @media (max-width: 480px) {
   .otp-container {
-    gap: 8px;
+    gap: 7px;
   }
 
   .otp-input {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 44px;
     font-size: 16px;
   }
 }
